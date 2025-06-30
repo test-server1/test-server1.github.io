@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Hubfolio
+    Theme Name: Team 313
     Theme URI: http://
     Description: Creative Agency & Portfolio
     Author: Uithemez
