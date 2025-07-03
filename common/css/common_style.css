@@ -1,13 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Team 313
-    Theme URI: http://
-    Description: Creative Digital Agency & Portfolio
-    Author: UI-ThemeZ
-    Author URI: http://themeforest.net/user/UI-ThemeZ
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
 /* ========= [ variables ]  =========*/
 /* ========= [ global ]  =========*/
 /* Global
@@ -2479,3 +2469,233 @@ img.left {
     justify-content: flex-start !important; } }
 
 /* ====================== [ End Responsive ] ====================== */
+
+
+
+
+/* ========= [ Footer ]  =========*/
+/* ====================== [ Start Footer ] ====================== */
+
+/* --------------- footer --------------- */
+.footer-ds {
+  border-color: rgba(255, 255, 255, 0.3); }
+  .footer-ds .subscribe .form-group {
+    margin: 60px 0 15px;
+    position: relative; }
+    .footer-ds .subscribe .form-group label {
+      font-size: 14px;
+      margin-bottom: 10px; }
+    .footer-ds .subscribe .form-group input {
+      padding: 20px 50px 20px 20px;
+      background: var(--bg-color);
+      border: 0;
+      border-radius: 5px;
+      width: 100%;
+      color: #fff; }
+    .footer-ds .subscribe .form-group button {
+      background: transparent;
+      border: 0;
+      position: absolute;
+      bottom: 20px;
+      right: 15px;
+      width: 25px; }
+  .footer-ds .subscribe span {
+    color: #808080;
+    font-size: 13px; }
+    .footer-ds .subscribe span a {
+      color: #fff;
+      text-decoration: underline; }
+  .footer-ds .contact-info .item h6 {
+    margin-bottom: 15px; }
+  .footer-ds .contact-info .item p {
+    font-size: 14px;
+    margin-top: 5px; }
+  .footer-ds .sub-footer .copy .logo {
+    width: 25px; }
+  .footer-ds .sub-footer .copy p {
+    font-size: 14px; }
+    .footer-ds .sub-footer .copy p a {
+      color: #fff; }
+  .footer-ds .sub-footer .links {
+    width: 100%; }
+    .footer-ds .sub-footer .links a {
+      font-size: 14px; }
+    .footer-ds .sub-footer .links .active {
+      color: #fff; }
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+  background-color: var(--theme-color); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 0; }
+
+h1 {
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -3px; }
+
+h2 {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -3px; }
+
+h3 {
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -2px; }
+
+h4 {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px; }
+
+h5 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -1px; }
+
+h6 {
+  font-size: 24px;
+  line-height: 32px; }
+
+.sub-head {
+  font-size: 20px;
+  line-height: 28px; }
+
+p {
+  color: #bbb;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0; }
+
+.sec-head h2 {
+  font-size: 65px;
+  line-height: 65px; }
+  .sec-head h2 span {
+    color: var(--main-color);
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 400; }
+
+.loader-wrap svg {
+  fill: #1d1d1d; }
+
+.butn.butn-bord {
+  border: 1px solid rgba(255, 255, 255, 0.2); }
+  .butn.butn-bord:hover {
+    background: var(--main-color);
+    color: #fff; }
+
+.butn.butn-bg {
+  background: var(--main-color);
+  border: 1px solid transparent;
+  color: #fff; }
+  .butn.butn-bg:hover {
+    background: transparent;
+    border-color: var(--main-color);
+    color: inherit; }
+
+.icon.invert img {
+  -webkit-filter: invert(1);
+  filter: invert(1); }
+
+.butn .icon {
+  width: 18px; }
+
+.butn:hover .icon.invert img {
+  -webkit-filter: invert(0);
+  filter: invert(0); }
+
+.box-light {
+  background-color: #fff;
+  color: #000; }
+
+.box-dark .box {
+  background: var(--bg-color);
+  border-radius: 15px;
+  padding: 100px 80px;
+  position: relative; }
+  .box-dark .box .layers {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    right: 30px;
+    bottom: -10px;
+    background: var(--bg-color);
+    border-radius: 15px;
+    opacity: .7;
+    z-index: -1; }
+    .box-dark .box .layers:after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 20px;
+      right: 20px;
+      bottom: -10px;
+      background: var(--bg-color);
+      border-radius: 15px;
+      opacity: .7;
+      z-index: -1; }
+
+.footer-sa .call-action h2 {
+  font-size: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  position: relative; }
+  .footer-sa .call-action h2 .buton {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: #d0ff71;
+    position: absolute;
+    top: -80px;
+    right: 8%;
+    font-size: 32px;
+    color: #212121; }
+    .footer-sa .call-action h2 .buton img {
+      width: 30px; }
+
+.footer-sa .logo {
+  width: 160px; }
+
+.footer-sa .contact-info .item {
+  margin-bottom: 50px; }
+  .footer-sa .contact-info .item span {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+
+.footer-sa .contact-info .social-icon a {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  font-size: 14px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s; }
+  .footer-sa .contact-info .social-icon a:hover {
+    border-color: #fff; }
+
+.footer-sa .sub-footer .copy p {
+  font-size: 14px; }
+  .footer-sa .sub-footer .copy p a {
+    color: #fff; }
+
+.footer-sa .sub-footer .links {
+  width: 100%; }
+  .footer-sa .sub-footer .links a {
+    font-size: 14px; }
+  .footer-sa .sub-footer .links .active {
+    color: #fff; }
+
+/* ====================== [ End Footer ] ====================== */

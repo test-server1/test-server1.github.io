@@ -9,6 +9,15 @@
 
 -----------------------------------------------------------------------------------*/
 
+// Function to send WhatsApp message
+        function sendWhatsApp() {
+            const business = document.getElementById("businessName").value.trim();
+            const phoneNumber = "447428411517"; // Replace with your actual WhatsApp number
+            const message = `Hi Team313, I'd like a free audit report for my website, social media, and Google profile.%0ABusiness Name: ${encodeURIComponent(business)}`;
+            const url = `https://wa.me/${phoneNumber}?text=${message}`;
+            window.open(url, '_blank');
+        }
+
 
 $(function () {
 
