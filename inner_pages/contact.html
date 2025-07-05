@@ -241,7 +241,7 @@
                                             </div>
                                         </div>
                                         <div class="phone fz-30 fw-600 mt-30 underline main-color">
-                                            <a href="#0">+44 7428 411517</a>
+                                            <a target="_blank" href="https://wa.me/447428411517?text=Hi%20Team%20313%2C%20I%20want%20to%20know%20more%20about%20your%20services">+44 7428 411517</a>
                                         </div>
                                     </div>
                                     
@@ -260,30 +260,26 @@
 
                                             <div class="col-lg-6">
                                                 <div class="form-group mb-30">
-                                                    <input id="form_name" type="text" name="name" placeholder="Name"
+                                                    <input id="name" type="text" name="name" placeholder="Name"
                                                         required="required">
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
                                                 <div class="form-group mb-30">
-                                                    <input id="form_email" type="email" name="email" placeholder="Email"
+                                                    <input id="email" type="email" name="email" placeholder="Email"
                                                         required="required">
                                                 </div>
                                             </div>
-
-                                            <div class="col-12">
-                                                <div class="form-group mb-30">
-                                                    <input id="form_subject" type="text" name="subject"
-                                                        placeholder="Subject">
-                                                </div>
-                                            </div>
-
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <textarea id="form_message" name="message" placeholder="Message"
+                                                    <textarea id="message" name="message" placeholder="Message"
                                                         rows="4" required="required"></textarea>
                                                 </div>
+
+                                                <p id="form-message"></p>
+                                                <div class="g-recaptcha mt-30" data-sitekey="6LcOz3grAAAAAPLTe5geR7QDQIgetcyFB2bOFxc7"></div>
+
                                                 <div class="mt-30">
                                                     <button type="submit" class="butn butn-md butn-bord butn-rounded">
                                                         <div class="d-flex align-items-center">
@@ -399,12 +395,75 @@
     </div>
 
 
+<!-- ==================== Contact Form ==================== -->
+
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+      
+        // Check if reCAPTCHA is completed
+        var recaptchaResponse = grecaptcha.getResponse();
+        if (recaptchaResponse.length === 0) {
+            // If reCAPTCHA is not completed, display an error message
+            document.getElementById("form-message").innerText = "Please complete the reCAPTCHA.";
+            document.getElementById("form-message").style.color = "red";
+            return; // Don't proceed with form submission
+        }
+
+        var formData = new FormData(event.target);
+        var data = {};
+        formData.forEach((value, key) => data[key] = value);
+    
+        var loader = document.getElementById("loader");
+    
+        // Show loader
+        loader.style.display = "inline-block";
+
+        fetch("https://test-server1-github-io.vercel.app/api/submit.js", { 
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+                recaptchaResponse: recaptchaResponse // Include reCAPTCHA response in the request
+            })
+        })
+        .then(() => {
+            console.log("Form submitted successfully!");
+            name = document.getElementById("name").value,
+            email = document.getElementById("email").value,
+            message = document.getElementById("message").value;
+            console.log(name, email, message);
+    
+            // Show success message
+            document.getElementById("form-message").innerText = "Your message has been sent successfully!";
+            document.getElementById("form-message").style.color = "green";
+    
+            // Reset form fields
+            event.target.reset();
+    
+            // Reset Google reCAPTCHA (if used)
+            if (typeof grecaptcha !== "undefined") {
+                grecaptcha.reset();
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            document.getElementById("form-message").innerText = "There was an error submitting the form. Please try again.";
+            document.getElementById("form-message").style.color = "red";
+        })
+        .finally(() => {
+            loader.style.display = "none"; // Hide loader
+        });
+    });
+</script>
 
 
 
 
-
-
+<!-- Recaptcha -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
     <!-- jQuery -->
