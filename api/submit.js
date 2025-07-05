@@ -69,7 +69,7 @@ export default async function handler(req, res) {
         email,
         message,
         apiKey: APP_SCRIPT_API_KEY,
-        referer: "https://test-server1-github-io.vercel.app/api/submit", // CHANGE THIS TO YOUR DOMAIN
+        referer: "https://test-server1-github-io.vercel.app", // CHANGE THIS TO YOUR DOMAIN
         recaptchaResponse,
       }),
     });
