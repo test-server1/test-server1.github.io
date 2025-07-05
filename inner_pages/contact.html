@@ -413,9 +413,6 @@
         var formData = new FormData(event.target);
         var data = {};
         formData.forEach((value, key) => data[key] = value);
-    
-        // Show loader
-        loader.style.display = "inline-block";
 
         fetch("https://test-server1-github-io.vercel.app/api/submit.js", { 
             method: "POST",
@@ -452,7 +449,10 @@
             document.getElementById("form-message").style.color = "red";
         })
         .finally(() => {
-            loader.style.display = "none"; // Hide loader
+            // Reset the reCAPTCHA response after form submission
+            if (typeof grecaptcha !== "undefined") {
+                grecaptcha.reset();
+            }
         });
     });
 </script>
