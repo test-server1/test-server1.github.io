@@ -32,7 +32,8 @@ $(function () {
         spaceBetween: 30,
         speed: 1500,
         autoplay: {
-            delay: 5000,
+            delay: 250,
+            disableOnInteraction: false,
         },
         loop: true,
         pagination: {
