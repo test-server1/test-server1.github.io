@@ -281,14 +281,21 @@
                                                 <div class="g-recaptcha mt-30" data-sitekey="6LcOz3grAAAAAPLTe5geR7QDQIgetcyFB2bOFxc7"></div>
 
                                                 <div class="mt-30">
-                                                    <button type="submit" class="butn butn-md butn-bord butn-rounded">
-                                                        <div class="d-flex align-items-center">
-                                                            <span>Let's Talking</span>
-                                                            <span class="icon ml-10">
-                                                                <img src="../common/imgs/icons/arrow-top-right.svg"
-                                                                    alt="">
-                                                            </span>
-                                                        </div>
+                                                    <button type="submit" class="butn butn-md butn-bord butn-rounded" id="submit-btn">
+                                                        <span id="btn-text">Let's Talk</span>
+                                                        <span class="icon ml-10">
+                                                            <img src="../common/imgs/icons/arrow-top-right.svg" alt="">
+                                                        </span>
+                                                        <!-- Loading spinner -->
+                                                        <span id="submit-spinner" style="display:none; margin-left:10px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                                <style>
+                                                                    .spinner_ajPY{transform-origin:center;animation:spinner_AtaB .75s infinite linear}@keyframes spinner_AtaB{100%{transform:rotate(360deg)}}
+                                                                </style>
+                                                                <path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/>
+                                                                <path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z" class="spinner_ajPY"/>
+                                                            </svg>
+                                                        </span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -400,6 +407,17 @@
 <script>
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault();
+
+         // Get elements - using proper selectors
+            const submitBtn = event.target.querySelector('button[type="submit"]');
+            const spinner = document.getElementById("submit-spinner");
+            const btnText = submitBtn.querySelector('span:first-child'); // Targets the first span
+            const formMessage = document.getElementById("form-message");
+
+        // Disable button and show loading state
+            submitBtn.disabled = true;
+            btnText.textContent = "Sending...";
+            if (spinner) spinner.style.display = "inline-block";
       
         // Check if reCAPTCHA is completed
         var recaptchaResponse = grecaptcha.getResponse();
@@ -407,7 +425,12 @@
             // If reCAPTCHA is not completed, display an error message
             document.getElementById("form-message").innerText = "Please complete the reCAPTCHA.";
             document.getElementById("form-message").style.color = "red";
-            return; // Don't proceed with form submission
+            
+            // Reset button state
+            submitBtn.disabled = false;
+            btnText.textContent = "Let's Talk";
+            spinner.style.display = "none";
+            return;
         }
 
         var formData = new FormData(event.target);
@@ -434,14 +457,10 @@
             // Show success message
             document.getElementById("form-message").innerText = "Your message has been sent successfully!";
             document.getElementById("form-message").style.color = "green";
-    
             // Reset form fields
             event.target.reset();
-    
-            // Reset Google reCAPTCHA (if used)
-            if (typeof grecaptcha !== "undefined") {
-                grecaptcha.reset();
-            }
+            // Reset recaptcha
+            grecaptcha.reset();
         })
         .catch(error => {
             console.error("Error:", error);
@@ -449,10 +468,10 @@
             document.getElementById("form-message").style.color = "red";
         })
         .finally(() => {
-            // Reset the reCAPTCHA response after form submission
-            if (typeof grecaptcha !== "undefined") {
-                grecaptcha.reset();
-            }
+            submitBtn.disabled = false;
+            btnText.textContent = "Let's Talk";
+            spinner.style.display = "none";
+            grecaptcha.reset();
         });
     });
 </script>
