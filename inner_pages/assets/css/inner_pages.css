@@ -376,60 +376,7 @@
   .clients-ds .item p {
     margin-top: 30px; }
 
-.footer-sa .call-action h2 {
-  font-size: 100px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
-  position: relative; }
-  .footer-sa .call-action h2 .buton {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    background: var(--main-color);
-    position: absolute;
-    top: -80px;
-    right: 8%;
-    font-size: 32px;
-    color: #212121; }
-    .footer-sa .call-action h2 .buton img {
-      width: 30px; }
 
-.footer-sa .logo {
-  width: 160px; }
-
-.footer-sa .contact-info .item {
-  margin-bottom: 50px; }
-  .footer-sa .contact-info .item span {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-bottom: 10px; }
-
-.footer-sa .contact-info .social-icon a {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  font-size: 14px;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s; }
-  .footer-sa .contact-info .social-icon a:hover {
-    border-color: #fff; }
-
-.footer-sa .sub-footer .copy p {
-  font-size: 14px; }
-  .footer-sa .sub-footer .copy p a {
-    color: #fff; }
-
-.footer-sa .sub-footer .links {
-  width: 100%; }
-  .footer-sa .sub-footer .links a {
-    font-size: 14px; }
-  .footer-sa .sub-footer .links .active {
-    color: #fff; }
 
 /* --------------- Services pg --------------- */
 .serv-hed .caption {
@@ -660,60 +607,7 @@
     .serv-details .accordion-item .accordion-body p {
       font-size: 14px; }
 
-.footer-sa .call-action h2 {
-  font-size: 100px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
-  position: relative; }
-  .footer-sa .call-action h2 .buton {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    background: var(--main-color);
-    position: absolute;
-    top: -80px;
-    right: 8%;
-    font-size: 32px;
-    color: #212121; }
-    .footer-sa .call-action h2 .buton img {
-      width: 30px; }
 
-.footer-sa .logo {
-  width: 160px; }
-
-.footer-sa .contact-info .item {
-  margin-bottom: 50px; }
-  .footer-sa .contact-info .item span {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-bottom: 10px; }
-
-.footer-sa .contact-info .social-icon a {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  font-size: 14px;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s; }
-  .footer-sa .contact-info .social-icon a:hover {
-    border-color: #fff; }
-
-.footer-sa .sub-footer .copy p {
-  font-size: 14px; }
-  .footer-sa .sub-footer .copy p a {
-    color: #fff; }
-
-.footer-sa .sub-footer .links {
-  width: 100%; }
-  .footer-sa .sub-footer .links a {
-    font-size: 14px; }
-  .footer-sa .sub-footer .links .active {
-    color: #fff; }
 
 /* --------------- Team pg --------------- */
 .team-hed .caption h1 {
@@ -761,60 +655,7 @@
 .team-pg .item .cont h6 {
   margin-bottom: 5px; }
 
-.footer-sa .call-action h2 {
-  font-size: 100px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
-  position: relative; }
-  .footer-sa .call-action h2 .buton {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    background: var(--main-color);
-    position: absolute;
-    top: -80px;
-    right: 8%;
-    font-size: 32px;
-    color: #212121; }
-    .footer-sa .call-action h2 .buton img {
-      width: 30px; }
 
-.footer-sa .logo {
-  width: 160px; }
-
-.footer-sa .contact-info .item {
-  margin-bottom: 50px; }
-  .footer-sa .contact-info .item span {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-bottom: 10px; }
-
-.footer-sa .contact-info .social-icon a {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  font-size: 14px;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s; }
-  .footer-sa .contact-info .social-icon a:hover {
-    border-color: #fff; }
-
-.footer-sa .sub-footer .copy p {
-  font-size: 14px; }
-  .footer-sa .sub-footer .copy p a {
-    color: #fff; }
-
-.footer-sa .sub-footer .links {
-  width: 100%; }
-  .footer-sa .sub-footer .links a {
-    font-size: 14px; }
-  .footer-sa .sub-footer .links .active {
-    color: #fff; }
 
 /* --------------- Careers pg --------------- */
 .pricing-hed .caption h1 {
@@ -917,60 +758,7 @@
   .clients-ds .item p {
     margin-top: 30px; }
 
-.footer-sa .call-action h2 {
-  font-size: 100px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
-  position: relative; }
-  .footer-sa .call-action h2 .buton {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    background: var(--main-color);
-    position: absolute;
-    top: -80px;
-    right: 8%;
-    font-size: 32px;
-    color: #212121; }
-    .footer-sa .call-action h2 .buton img {
-      width: 30px; }
 
-.footer-sa .logo {
-  width: 160px; }
-
-.footer-sa .contact-info .item {
-  margin-bottom: 50px; }
-  .footer-sa .contact-info .item span {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-bottom: 10px; }
-
-.footer-sa .contact-info .social-icon a {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  font-size: 14px;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s; }
-  .footer-sa .contact-info .social-icon a:hover {
-    border-color: #fff; }
-
-.footer-sa .sub-footer .copy p {
-  font-size: 14px; }
-  .footer-sa .sub-footer .copy p a {
-    color: #fff; }
-
-.footer-sa .sub-footer .links {
-  width: 100%; }
-  .footer-sa .sub-footer .links a {
-    font-size: 14px; }
-  .footer-sa .sub-footer .links .active {
-    color: #fff; }
 
 /* --------------- Careers pg --------------- */
 .pricing-hed .caption h1 {
@@ -1011,60 +799,7 @@
     .faqs-pg .accordion-item .accordion-body p {
       font-size: 14px; }
 
-.footer-sa .call-action h2 {
-  font-size: 100px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
-  position: relative; }
-  .footer-sa .call-action h2 .buton {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    background: var(--main-color);
-    position: absolute;
-    top: -80px;
-    right: 8%;
-    font-size: 32px;
-    color: #212121; }
-    .footer-sa .call-action h2 .buton img {
-      width: 30px; }
 
-.footer-sa .logo {
-  width: 160px; }
-
-.footer-sa .contact-info .item {
-  margin-bottom: 50px; }
-  .footer-sa .contact-info .item span {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-bottom: 10px; }
-
-.footer-sa .contact-info .social-icon a {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  font-size: 14px;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s; }
-  .footer-sa .contact-info .social-icon a:hover {
-    border-color: #fff; }
-
-.footer-sa .sub-footer .copy p {
-  font-size: 14px; }
-  .footer-sa .sub-footer .copy p a {
-    color: #fff; }
-
-.footer-sa .sub-footer .links {
-  width: 100%; }
-  .footer-sa .sub-footer .links a {
-    font-size: 14px; }
-  .footer-sa .sub-footer .links .active {
-    color: #fff; }
 
 /* --------------- Portfolio pg --------------- */
 .work-hed .caption h1 {
@@ -1233,60 +968,33 @@
     .proj-details .accordion-item .accordion-body p {
       font-size: 14px; }
 
-.footer-sa .call-action h2 {
-  font-size: 100px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
-  position: relative; }
-  .footer-sa .call-action h2 .buton {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
+
+
+
+      /* Add smooth transition for newly loaded items */
+.gallery .items {
+    transition: opacity 0.3s ease;
+}
+
+/* Style for the load more button */
+#load-more-btn {
+    padding: 12px 30px;
     background: var(--main-color);
-    position: absolute;
-    top: -80px;
-    right: 8%;
-    font-size: 32px;
-    color: #212121; }
-    .footer-sa .call-action h2 .buton img {
-      width: 30px; }
-
-.footer-sa .logo {
-  width: 160px; }
-
-.footer-sa .contact-info .item {
-  margin-bottom: 50px; }
-  .footer-sa .contact-info .item span {
-    font-size: 12px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
     text-transform: uppercase;
-    margin-bottom: 10px; }
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
-.footer-sa .contact-info .social-icon a {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  font-size: 14px;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s; }
-  .footer-sa .contact-info .social-icon a:hover {
-    border-color: #fff; }
+#load-more-btn:hover {
+    background: #fff;
+    color: var(--main-color);
+}
 
-.footer-sa .sub-footer .copy p {
-  font-size: 14px; }
-  .footer-sa .sub-footer .copy p a {
-    color: #fff; }
-
-.footer-sa .sub-footer .links {
-  width: 100%; }
-  .footer-sa .sub-footer .links a {
-    font-size: 14px; }
-  .footer-sa .sub-footer .links .active {
-    color: #fff; }
 
 /* --------------- Portfolio pg --------------- */
 .blog-hed .caption h1 {
@@ -1645,60 +1353,7 @@
     .sidebar .widget.tags a:hover {
       background: var(--main-color); }
 
-.footer-sa .call-action h2 {
-  font-size: 100px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
-  position: relative; }
-  .footer-sa .call-action h2 .buton {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    background: var(--main-color);
-    position: absolute;
-    top: -80px;
-    right: 8%;
-    font-size: 32px;
-    color: #212121; }
-    .footer-sa .call-action h2 .buton img {
-      width: 30px; }
 
-.footer-sa .logo {
-  width: 160px; }
-
-.footer-sa .contact-info .item {
-  margin-bottom: 50px; }
-  .footer-sa .contact-info .item span {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-bottom: 10px; }
-
-.footer-sa .contact-info .social-icon a {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  font-size: 14px;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s; }
-  .footer-sa .contact-info .social-icon a:hover {
-    border-color: #fff; }
-
-.footer-sa .sub-footer .copy p {
-  font-size: 14px; }
-  .footer-sa .sub-footer .copy p a {
-    color: #fff; }
-
-.footer-sa .sub-footer .links {
-  width: 100%; }
-  .footer-sa .sub-footer .links a {
-    font-size: 14px; }
-  .footer-sa .sub-footer .links .active {
-    color: #fff; }
 
 /* --------------- Careers pg --------------- */
 .contact-hed .caption h1 {
@@ -1741,60 +1396,7 @@
 .contact-pg .butn:hover {
   background: var(--main-color) !important; }
 
-.footer-sa .call-action h2 {
-  font-size: 100px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
-  position: relative; }
-  .footer-sa .call-action h2 .buton {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    background: var(--main-color);
-    position: absolute;
-    top: -80px;
-    right: 8%;
-    font-size: 32px;
-    color: #212121; }
-    .footer-sa .call-action h2 .buton img {
-      width: 30px; }
 
-.footer-sa .logo {
-  width: 160px; }
-
-.footer-sa .contact-info .item {
-  margin-bottom: 50px; }
-  .footer-sa .contact-info .item span {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-bottom: 10px; }
-
-.footer-sa .contact-info .social-icon a {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  font-size: 14px;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s; }
-  .footer-sa .contact-info .social-icon a:hover {
-    border-color: #fff; }
-
-.footer-sa .sub-footer .copy p {
-  font-size: 14px; }
-  .footer-sa .sub-footer .copy p a {
-    color: #fff; }
-
-.footer-sa .sub-footer .links {
-  width: 100%; }
-  .footer-sa .sub-footer .links a {
-    font-size: 14px; }
-  .footer-sa .sub-footer .links .active {
-    color: #fff; }
 
 body {
   font-family: "Inter", sans-serif;

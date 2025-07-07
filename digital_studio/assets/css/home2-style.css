@@ -627,52 +627,7 @@
     opacity: 1;
     visibility: visible; }
 
-/* --------------- footer --------------- */
-.footer-ds {
-  border-color: rgba(255, 255, 255, 0.3); }
-  .footer-ds .subscribe .form-group {
-    margin: 60px 0 15px;
-    position: relative; }
-    .footer-ds .subscribe .form-group label {
-      font-size: 14px;
-      margin-bottom: 10px; }
-    .footer-ds .subscribe .form-group input {
-      padding: 20px 50px 20px 20px;
-      background: var(--bg-color);
-      border: 0;
-      border-radius: 5px;
-      width: 100%;
-      color: #fff; }
-    .footer-ds .subscribe .form-group button {
-      background: transparent;
-      border: 0;
-      position: absolute;
-      bottom: 20px;
-      right: 15px;
-      width: 25px; }
-  .footer-ds .subscribe span {
-    color: #808080;
-    font-size: 13px; }
-    .footer-ds .subscribe span a {
-      color: #fff;
-      text-decoration: underline; }
-  .footer-ds .contact-info .item h6 {
-    margin-bottom: 15px; }
-  .footer-ds .contact-info .item p {
-    font-size: 14px;
-    margin-top: 5px; }
-  .footer-ds .sub-footer .copy .logo {
-    width: 25px; }
-  .footer-ds .sub-footer .copy p {
-    font-size: 14px; }
-    .footer-ds .sub-footer .copy p a {
-      color: #fff; }
-  .footer-ds .sub-footer .links {
-    width: 100%; }
-    .footer-ds .sub-footer .links a {
-      font-size: 14px; }
-    .footer-ds .sub-footer .links .active {
-      color: #fff; }
+
 
 body {
   font-family: "Inter", sans-serif;
